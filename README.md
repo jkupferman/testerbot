@@ -26,6 +26,6 @@ There is no magic here. We use `find` to determine if files have changed since t
 ### Hey geniusboy, why not use autotest/inotify/(other existing tools)?
 This is just a handy script I wrote to make sure I am always running the test suite. It is certainly not the smartest or most efficient script, but I find a lot of utility in the fact that has no dependencies and is language/framework independant unlike most other tools I've seen. 
 
-Protip: If you are using Ruby use autotest, its *way* better than this :)
+Protip: If you are using Ruby use [autotest](https://github.com/grosser/autotest), its *way* better than this :)
 
 ![Hank the testerbot](http://inhabitots.wpengine.netdna-cdn.com/wp-content/uploads/2010/06/snack-serving-robot-1.jpg)
