@@ -9,7 +9,7 @@ testerbot is a helpful little robot that watches your code and automatically run
 * Run testerbot `./testerbot`
 
 ### Is it actually doing anything? It's just sitting there...
-* Open `test/run` in your favorite editor in a seperate tab
+* Open `test/run` in your favorite editor in a separate tab
 * Change `1999` to `2011`
 * Hit save
 * Watch it print `testerbot: the best since 2011`
