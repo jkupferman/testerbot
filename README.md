@@ -28,4 +28,4 @@ This is just a handy script I wrote to make sure I am always running the test su
 
 Protip: If you are using Ruby use autotest, its *way* better than this :)
 
-[Hank the testerbot](http://inhabitots.wpengine.netdna-cdn.com/wp-content/uploads/2010/06/snack-serving-robot-1.jpg)
+![Hank the testerbot](http://inhabitots.wpengine.netdna-cdn.com/wp-content/uploads/2010/06/snack-serving-robot-1.jpg)
