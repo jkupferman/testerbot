@@ -1,1 +1,27 @@
 #!/bin/bash
+
+### VARIABLES TO CHANGE
+
+# How do you run your tests?
+RUN_TEST_COMMAND="test/run"
+# Where does your code live?
+DIRECTORIES_TO_WATCH="."
+
+### END VARIABLES TO CHANGE
+
+# Maintains the last time the tests were run
+TIMESTAMP_FILE="/tmp/testerbot-timekeeper"
+touch $TIMESTAMP_FILE
+
+while true;
+do
+    # How many files have changed since the last run?
+    CHANGED_FILE_COUNT=`find $DIRECTORIES_TO_WATCH -newer $TIMESTAMP_FILE | wc -l`
+    if [ "$CHANGED_FILE_COUNT" -gt "0" ]
+    then
+        clear
+        nice -n 30 $RUN_TEST_COMMAND # try to be nice
+        touch $TIMESTAMP_FILE
+    fi
+    sleep 2
+done
